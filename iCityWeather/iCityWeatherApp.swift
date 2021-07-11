@@ -11,7 +11,8 @@ import SwiftUI
 struct iCityWeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherView()
+          //  MultiPicker()
         }
     }
 }
