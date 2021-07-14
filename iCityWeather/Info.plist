@@ -2,15 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>广告</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>城市小天气</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -27,6 +22,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationUsageDescription</key>
+	<string>Temperatura requires your permission to access your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Temperatura requires your permission to access your location.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>广告</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -42,10 +48,6 @@
 			<string>22mmun2rn5.skadnetwork</string>
 		</dict>
 	</array>
-	<key>NSLocationUsageDescription</key>
-	<string>Temperatura requires your permission to access your location.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Temperatura requires your permission to access your location.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

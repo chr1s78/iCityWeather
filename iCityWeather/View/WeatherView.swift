@@ -39,6 +39,7 @@ struct WeatherView: View {
                 
                 WeatherHeaderView(lon: longitude, lat: latitude, show: $showCityList)
                     .environmentObject(vm)
+                    .padding([.leading, .trailing])
                 
                 WeatherBodyView()
                     .environmentObject(vm)
@@ -84,11 +85,14 @@ struct WeatherHeaderView: View {
     var body: some View {
         HStack {
             Button(action: {
+                print("click left button")
                 vm.fetchWeatherbyLocation(lng: String(longitude), lat: String(latitude))
             }, label: {
                 Image(systemName: "location.fill")
                     .foregroundColor(.white)
+                    .frame(width: 60, height: 60)
             })
+            .offset(x: -20)
             
             Spacer()
             
@@ -115,11 +119,14 @@ struct WeatherHeaderView: View {
             Spacer()
             
             Button(action: {
+                print("click right button")
                 self.showCityList.toggle()
             }, label: {
                 Image(systemName: "repeat.circle.fill")
                     .foregroundColor(.white)
+                    .frame(width: 60, height: 60)
             })
+            .offset(x: 20)
             
         }
         .padding()

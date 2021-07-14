@@ -59,12 +59,18 @@ final class BannerAdViewController: NSObject, UIViewControllerRepresentable,  BU
         self.showAD = false
         splashAd.removeFromSuperview()
     }
-    
+  
     func splashAd(_ splashAd: BUSplashAdView, didFailWithError error: Error?) {
-        print("splashAd")
+        print("splashAd error : \(error)")
         splashAd.removeFromSuperview()
     }
-
+    
+    func splashAdDidLoad(_ splashAd: BUSplashAdView) {
+        print("splashAdDidLoad")
+      //  self.showAD = false
+      //  splashAd.removeFromSuperview()
+    }
+    
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 

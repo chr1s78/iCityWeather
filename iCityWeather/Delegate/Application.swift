@@ -3,7 +3,6 @@ import Foundation
 import UIKit
 import SwiftUI
 import BUAdSDK
-//import BUAdSDK.BUAdSDKManager
 import AppTrackingTransparency
 import AdSupport
 
